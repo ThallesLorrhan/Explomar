@@ -19,7 +19,6 @@ const Hero = () => {
                       <a href="https://docs.google.com/forms/d/e/1FAIpQLSevtzc8fjwnWAtseTNSXqZ58ZeR4wtaeNddWVBNbpv4D2YNqw/viewform" target="_blank" class="cta-button">CADASTRE-SE</a>
                       <Link 
                         to="/home"
-                        target="_blank" 
                         class="secondary-button">
                           SAIBA MAIS
                       </Link>
