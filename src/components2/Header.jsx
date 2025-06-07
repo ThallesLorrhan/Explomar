@@ -1,4 +1,4 @@
-import Brasil from '../assets/Brasil.png'
+import Brazil from '../assets/Brazil.png'
 import Search from '../assets/Search.png'
 import styles from '../styles/home.module.css'
 import Line from '../assets/Line.png'
@@ -13,7 +13,7 @@ const Header = () => {
             <h1 className={styles.logo}>ExploMar</h1>
             <div className={styles.flags}>
               <img 
-                src={Brasil} 
+                src={Brazil} 
                 alt="BR" 
                 width={40}
                 />   
