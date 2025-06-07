@@ -6,7 +6,7 @@ import Itaipuacu from '../assets/itaipuacu.jpg'
 const Footer = () => {
   return (
     <div>
-      <footer>
+      <footer class="footer" >
         <div class="footer-content">
             <div class="footer-section">
                 <h3>EXPLOMAR</h3>
