@@ -1,5 +1,6 @@
 import React from 'react';
 import guiascss from '../styles/guiasturisticos.module.css';
+import { Link } from 'react-router-dom'
 
 const GuiasTuristicos = () => {
   return (
@@ -71,7 +72,11 @@ const GuiasTuristicos = () => {
                 <div><strong>NOME:</strong> XXXXXXXX</div>
                 <div><strong>IDADE:</strong> XX</div>
                 <div><strong>EXPERIÊNCIA:</strong> XXXXX</div>
-                <button className={guiascss['ver-mais']}>VER MAIS</button>
+                 <Link
+                    to='/perfil-proficional'
+                    >
+                      <button className={guiascss['ver-mais']}>VER MAIS</button>
+                    </Link>
               </div>
             </div>
           ))}

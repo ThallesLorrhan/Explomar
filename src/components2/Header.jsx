@@ -68,10 +68,26 @@ const Header = () => {
                 <div className={styles['menu-suspenso']}>
                   <button className={styles['botao-menu-suspenso']}>Destinos</button>
                   <div className={styles['conteudo-menu-suspenso']}>
-                    <a href="#">Centro</a>
-                    <a href="#">Inoã</a>
-                    <a href="#">Ponta negra</a>
-                    <a href="Itaipuaçu.html" target="_self">Itaipuaçu</a>
+                    <Link
+                    to='/destinos'
+                    >
+                      Centro
+                    </Link>
+                    <Link
+                    to='/destinos'
+                    >
+                      Inoã
+                    </Link>
+                    <Link
+                    to='/destinos'
+                    >
+                      Ponta negra
+                    </Link>
+                    <Link
+                    to='/destinos'
+                    >
+                      Itaipuaçu
+                    </Link>
                   </div>
                 </div>
 
@@ -91,7 +107,7 @@ const Header = () => {
                 </button>
                 <button className={styles['menu-item']}>
                  <Link
-                    to=''
+                    to='/feedback'
                     >
                       Avaliação
                     </Link>

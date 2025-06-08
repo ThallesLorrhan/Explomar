@@ -1,0 +1,138 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+    background-color: #fff;
+    color: #333;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+ 
+
+
+  .breadcrumb {
+    padding: 50px 50px 0px 50px;
+    margin: 20px 20px 0px 20px;
+    color: #999;
+    font-size: 14px;
+  }
+  
+.h1feed {
+    padding: 10px 50px;
+    margin: 20px;
+    font-size: 28px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+.form2 {
+    margin: 20px;
+    padding: 10px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+
+  .legend{
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  input.error {
+    border-color: #e74c3c;
+    background-color: #fdecea;
+  }
+  
+  .error-text {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    background-color: #ccc;
+    color: #666;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 14px;
+  }
+  
+  .file-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  input[type="file"] {
+    font-size: 14px;
+  }
+  
+  .stars {
+    display: flex;
+    gap: 5px;
+    font-size: 30px;
+    color: gold;
+    cursor: pointer;
+  }
+  
+  .submit-button {
+    grid-column: span 2;
+    text-align: right;
+  }
+  
+  button {
+    background-color: #f96806;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    form {
+      grid-template-columns: 1fr;
+    }
+  
+    .submit-button {
+      text-align: center;
+    }
+  }
+  
