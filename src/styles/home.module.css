@@ -127,6 +127,51 @@
   white-space: nowrap;       
 }
 
+.humburguer {
+  display: none;
+  align-items: center;
+}
+
+.hamburguerButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  
+  transition: transform 0.2s ease;
+}
+
+.hamburguerButton:hover {
+  transform: scale(1.1);
+}
+
+.hamburguerIcon {
+  width: 50px;
+}
+
+@media (max-width: 1000px) {
+  .humburguer{
+    display: flex;
+  }
+  .flags{
+    display: none;
+  }
+  .search-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu{
+    display: none !important;
+  }
+  .wordImg {
+    position: absolute;
+    right: 60%;
+    width: 100% !important;
+    transform: translateY(50%);
+}
+  
+}
+
 
   /*   */
 .hero-content h2 {
@@ -255,16 +300,17 @@
     padding: 1rem;
     justify-content: center;
   }
+
   
 .search-box button {
     padding: 1rem;
-    width: 300px;
+    width: 50%;
     border-radius: 6px;
     border: none;
 }
 .search-box input{
     padding: 1rem;
-    width: 300px;
+    width: 33%;
     border-radius: 6px;
     border: none;}
   

@@ -1,0 +1,225 @@
+/* Variáveis de cor */
+:root {
+  --laranja: #ff7300;
+  --laranja-hover: #ff8c1a;
+  --cinza-claro: #fafafa;
+  --cinza-borda: #ececec;
+  --cinza-texto: #bdbdbd;
+  --preto: #222;
+  --branco: #fff;
+}
+
+*{
+  text-decoration: none;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--branco);
+  color: var(--preto);
+}
+
+
+
+.breadcrumb {
+  position: absolute;
+  color: var(--cinza-texto);
+  font-size: 16px;
+  margin-left: 26px;
+}
+
+.container3 {
+  display: flex;
+  margin-top: 24px;
+}
+
+.filtros {
+  background: var(--branco);
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(255, 115, 0, 0.08);
+  padding: 32px 24px;
+  margin: 24px 0 24px 24px;
+  border: none;
+  min-width: 260px;
+}
+.filtros h2 {
+  color: var(--laranja);
+  font-size: 1.4rem;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+}
+.filtros .icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+.filtro-item {
+  margin-bottom: 22px;
+  color: var(--preto);
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.filtro-item label {
+  color: var(--cinza-texto);
+  font-weight: normal;
+  margin-right: 10px;
+  margin-top: 4px;
+  font-size: 0.98em;
+}
+.filtro-item input,
+.filtro-item select {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--cinza-borda);
+  background: var(--cinza-claro);
+  font-size: 1em;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.filtro-item input:focus,
+.filtro-item select:focus {
+  border: 1.5px solid var(--laranja);
+  outline: none;
+  box-shadow: 0 0 0 2px #ffe3cc;
+}
+
+.conteudo {
+  flex: 1;
+  padding: 32px 48px;
+}
+
+.busca {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.busca input {
+  width: 350px;
+  padding: 14px 18px;
+  border: 1.5px solid var(--cinza-borda);
+  border-radius: 20px 0 0 20px;
+  background: var(--branco);
+  color: var(--preto);
+  font-size: 1.1em;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.busca input:focus {
+  border: 1.5px solid var(--laranja);
+  box-shadow: 0 0 0 2px #ffe3cc;
+  outline: none;
+}
+.busca input::placeholder {
+  color: var(--cinza-texto);
+  font-size: 1em;
+  opacity: 1;
+}
+.busca button {
+  background: var(--laranja);
+  border: none;
+  border-radius: 0 20px 20px 0;
+  color: var(--branco);
+  font-size: 1.2em;
+  padding: 0 22px;
+  cursor: pointer;
+}
+.busca button:hover, .busca button:focus {
+  background: var(--laranja-hover);
+  outline: none;
+  transform: scale(1.05);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.card {
+  background: var(--branco);
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(255, 115, 0, 0.10);
+  display: flex;
+  align-items: center;
+  padding: 28px 32px;
+  color: var(--preto);
+  margin-bottom: 24px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.card:hover {
+  box-shadow: 0 4px 24px rgba(255, 115, 0, 0.18);
+  transform: translateY(-2px) scale(1.01);
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  background: #e0e0e0;
+  border-radius: 50%;
+  margin-right: 32px;
+  border: 3px solid #fff3e6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.info {
+  flex: 1;
+}
+.info strong {
+  color: var(--laranja);
+  font-size: 1.08em;
+}
+.ver-mais {
+  margin-top: 18px;
+  background: var(--laranja);
+  color: var(--branco);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 32px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(255, 115, 0, 0.10);
+}
+.ver-mais:hover, .ver-mais:focus {
+  background: var(--laranja-hover);
+  transform: translateY(-2px) scale(1.04);
+  outline: none;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+  }
+  .filtros {
+    width: 100%;
+    margin: 0 0 24px 0;
+    border-right: none;
+    border-bottom: 2px solid var(--laranja);
+    border-radius: 0 0 18px 18px;
+    min-width: unset;
+  }
+  .conteudo {
+    padding: 16px;
+  }
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+  }
+  .avatar {
+    margin-bottom: 18px;
+    margin-right: 0;
+  }
+  .busca input {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* Acessibilidade extra */
+.filtro-item input[type="radio"]:focus + label,
+.filtro-item input[type="checkbox"]:focus + label {
+  outline: 2px solid var(--laranja);
+  outline-offset: 2px;
+}

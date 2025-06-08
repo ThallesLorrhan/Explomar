@@ -3,6 +3,8 @@ import Search from '../assets/Search.png'
 import styles from '../styles/home.module.css'
 import Line from '../assets/Line.png'
 import Word from '../assets/Word.png'
+import Hamburguer from '../assets/Hamburguer.png'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -38,6 +40,12 @@ const Header = () => {
                 <a href="#">CADASTRE-SE</a>
               </button>
             </div>
+            <div className={styles.humburguer}>
+              <button aria-label="Abrir menu" className={styles.hamburguerButton}>
+                <img src={Hamburguer} alt="Ícone de menu" className={styles.hamburguerIcon} />
+              </button>
+            </div>
+
           </div>
 
           <div className={styles['hero-content']}>
@@ -49,7 +57,12 @@ const Header = () => {
               <nav className={styles.menu}>
                 <button 
                   className={`${styles['menu-item']} ${styles.active}`}>
-                    Início
+                    <Link
+                    to='/home'
+                    >
+                      Início
+                    </Link>
+                    
                 </button>
 
                 <div className={styles['menu-suspenso']}>
@@ -63,13 +76,25 @@ const Header = () => {
                 </div>
 
                 <button className={styles['menu-item']}>
-                  <a href="Guias-turisticos.html" target="_self">Guia Turísticos</a>
+                  <Link
+                    to='/guias'
+                    >
+                      Guia Turísticos
+                    </Link>
                 </button>
                 <button className={styles['menu-item']}>
-                  <a href="TrabalheConosco.html" target="_self">Trabalhe conosco</a>
+                  <Link
+                    to='/trabalhe-conosco'
+                    >
+                    Trabalhe conosco
+                  </Link>
                 </button>
                 <button className={styles['menu-item']}>
-                  <a href="PageFeedback.html" target="_self">Avaliação</a>
+                 <Link
+                    to=''
+                    >
+                      Avaliação
+                    </Link>
                 </button>
               </nav>
           
