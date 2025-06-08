@@ -5,7 +5,7 @@ const Lugar = () => {
   return (
     <div>
       
-      
+
     </div>
   )
 }
