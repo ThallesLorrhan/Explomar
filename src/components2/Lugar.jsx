@@ -1,5 +1,5 @@
 import React from 'react'
-import l from '../styles/lugarcss.module.css'
+import l from '../styles/lugarcss1.module.css'
 
 const Lugar = () => {
   return (
