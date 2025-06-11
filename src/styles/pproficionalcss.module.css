@@ -1,6 +1,6 @@
 .bgWrap {
   background: #fff;
-  min-height: 100vh;
+  margin: 2rem ;
   padding: 0;
   position: relative;
   font-family: 'Inter', Arial, sans-serif;
@@ -8,8 +8,9 @@
 
 .topText {
   color: #bdbdbd;
-  font-size: 12px;
-  padding: 18px 0 0 28px;
+  font-size: 20px;
+  font-style: bold;
+  margin-left: 10%;
 }
 
 .profileCard {
