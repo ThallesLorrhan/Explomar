@@ -7,6 +7,8 @@ import TrabalheConosco from './pages/TrabalheConosco.jsx'
 import Destinos from './pages/Destinos.jsx'
 import PerfilProficional from './pages/PerfilProficional.jsx'
 import FeedBack from './pages/FeedBack.jsx'
+import Login from './pages/Login.jsx'
+import Cadastro from './pages/Cadastro.jsx'
 import './index.css'
 
 export default function App() {
@@ -20,6 +22,8 @@ export default function App() {
       <Route path="/destinos" element={<Destinos />} />
       <Route path='/perfil-proficional' element={<PerfilProficional />} />
       <Route path="/itaipuacu" element={<Itaipuacu />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/cadastro" element={<Cadastro />} />
     </Routes>
   )
 }
